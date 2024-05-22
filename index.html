@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emptydivprint</title>
+    <style>
+span{
+
+    background-color: red;
+    cursor: pointer;
+}
+p{
+
+   color: green; 
+}
+#print{
+
+    cursor: pointer;
+
+}
+
+
+    </style>
+</head>
+<body>
+   <span role="button" id="bt">tap to print</span> <br><br>
+   <p id="print"></p>
+
+
+<script>
+   var bt = document.getElementById("bt"); 
+bt.addEventListener('click',()=>{
+
+
+
+    document.getElementById("print").innerHTML= print();
+const print=()=>`am printing in an empty div`;
+
+
+
+});
+
+
+</script>
+
+
+
+</body>
+</html>
